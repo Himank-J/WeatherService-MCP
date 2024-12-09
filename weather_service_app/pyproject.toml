@@ -1,0 +1,23 @@
+[project]
+name = "weather-service-app"
+version = "0.1.0"
+description = "This repo serves as an introduction to Model Context Protocol (MCP). We create a weather service application by following principals of MCP"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+ "aiohttp>=3.11.10",
+ "httpx>=0.28.1",
+ "mcp>=1.1.0",
+ "python-dotenv>=1.0.1",
+ "requests>=2.32.3",
+]
+[[project.authors]]
+name = "Himank Jain"
+email = "himank.jain@bfhl.in"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+weather-service-app = "weather_service_app:main"
